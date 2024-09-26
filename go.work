@@ -1,4 +1,7 @@
-go 1.21.1
+go 1.23.1
 
-use ./08-modules
-use ./10-gin
+use (
+	.
+	./08-modules
+	./10-gin
+)
