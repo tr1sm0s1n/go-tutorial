@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/DEMYSTIF/go-tutorial/08-modules/helpers"
+	"go-tutorial/08-modules/helpers"
 )
 
 func main() {

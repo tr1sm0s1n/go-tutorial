@@ -1,3 +1,3 @@
-module github.com/DEMYSTIF/go-tutorial
+module go-tutorial
 
-go 1.21.1
+go 1.23.1

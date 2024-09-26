@@ -1,4 +1,4 @@
-module github.com/DEMYSTIF/go-tutorial/10-api
+module go-tutorial/10-api
 
 go 1.21.1
 
