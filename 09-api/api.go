@@ -8,7 +8,7 @@ import (
 func main() {
 	http.HandleFunc("/get", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodGet {
-			fmt.Fprintf(w, "Welcome to the HomePage!")
+			fmt.Fprintf(w, "You got something!")
 			return
 		}
 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
@@ -16,7 +16,7 @@ func main() {
 
 	http.HandleFunc("/post", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
-			fmt.Fprintf(w, "Welcome to the HomePage!")
+			fmt.Fprintf(w, "You post something!")
 			return
 		}
 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)

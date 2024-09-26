@@ -6,7 +6,7 @@ import (
 )
 
 func readword(ch chan string) {
-	fmt.Println("Type a word, then hit Enter.")
+	fmt.Println("You have 5 seconds. Type a word, then hit Enter.")
 	var word string
 	fmt.Scanf("%s", &word)
 	ch <- word
@@ -26,8 +26,8 @@ func main() {
 
 	select {
 	case word := <-ch:
-		fmt.Println("Received", word)
+		fmt.Println("Hooray, received:", word)
 	case <-t:
-		fmt.Println("Timeout.")
+		fmt.Println("Oops, Timeout!!")
 	}
 }
