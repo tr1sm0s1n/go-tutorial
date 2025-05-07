@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	count := 10
-	for i := 0; i < count; i++ {
+	for i := range count {
 		if i%2 == 0 {
 			fmt.Printf("%d is divisible by 2\n", i)
 		} else {
