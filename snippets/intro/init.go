@@ -1,24 +1,26 @@
 package main
 
 import (
+	"embed"
 	"fmt"
-	"os"
 )
 
 var (
+	//go:embed slides/*
+	dir embed.FS
 	// Parsed markdown contents.
 	data []string
 	// Markdown files.
 	slides = []string{
-		"./slides/what_go.md",
-		"./slides/why_go.md",
-		"./slides/how_go.md",
+		"slides/what_go.md",
+		"slides/why_go.md",
+		"slides/how_go.md",
 	}
 )
 
 func init() {
 	for _, s := range slides {
-		d, err := os.ReadFile(s)
+		d, err := dir.ReadFile(s)
 		if err != nil {
 			panic(err)
 		}
