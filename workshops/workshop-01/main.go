@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"snippets/workshop-01/handlers"
-	"snippets/workshop-01/types"
+	"snippets/workshops/workshop-01/handlers"
+	"snippets/workshops/workshop-01/types"
 )
 
 var (

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"snippets/workshop-01/types"
+	"snippets/workshops/workshop-01/types"
 	"strconv"
 )
 

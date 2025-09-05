@@ -3,7 +3,7 @@ package main
 import (
 	// "context"
 	"log"
-	"snippets/workshop-01/types"
+	"snippets/workshops/workshop-01/types"
 	"time"
 )
 
