@@ -14,7 +14,7 @@ func ConvertMarks(marks uint) (string, error) {
 		return "B", nil
 	case marks >= 40 && marks < 60:
 		return "C", nil
-	case marks >= 0 && marks < 40:
+	case marks < 40:
 		return "F", nil
 	}
 	return "", errors.New("failed to convert")
